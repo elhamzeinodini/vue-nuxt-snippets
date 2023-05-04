@@ -1,0 +1,66 @@
+@include sm {
+  .nav {
+    padding: $rm-1-5 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+    &__bars {
+      display: block;
+      cursor: pointer;
+    }
+
+    &__close {
+      width: 9rem;
+      height: $rm-1-5;
+      position: absolute;
+      inset: $rm-1-5 -2.5rem auto auto;
+      cursor: pointer;
+    }
+
+    &__logo {
+      &__item {
+        width: 9rem;
+        height: $rm-1-5;
+
+        &--desktop {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        padding: $rm-1-5;
+        position: absolute;
+        inset: 0 auto auto 0;
+        background-color: $white;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+      }
+    }
+
+    &__links {
+      margin-top: $rm-3;
+    }
+
+    &__items {
+      padding: $rm-1 0;
+      cursor: pointer;
+    }
+
+    &__btn {
+      margin-top: $rm-1-5;
+      width: 12rem;
+      height: $rm-3;
+    }
+
+  }
+}

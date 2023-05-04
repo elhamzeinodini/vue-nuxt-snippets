@@ -1,0 +1,40 @@
+@include lg{
+  .nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6rem;
+
+    &__logo{
+      &__item{
+        &--mobile{
+          display: none;
+        }
+      }
+    }
+
+
+    &__bars{
+      display: none;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 60%;
+    }
+
+    &__links {
+      display: flex;
+    }
+
+    &__items {
+      margin-right: 2.5rem;
+      cursor: pointer;
+    }
+
+  }
+}
