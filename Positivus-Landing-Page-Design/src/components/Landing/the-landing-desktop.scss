@@ -1,0 +1,45 @@
+@include lg{
+  .landing{
+    padding: 2rem 6rem;
+
+    &__data{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content{
+      height: 27rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title{
+      font-size: $rm-3;
+      font-weight: 800;
+      max-width: 15ch;
+    }
+
+    &__description{
+      max-width: 38ch;
+      line-height: $rm-1-5;
+    }
+
+    &__btn{
+      background-color: $black;
+      color: $white;
+    }
+
+    &__corp{
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__item{
+        cursor: pointer;
+      }
+    }
+
+  }
+}
