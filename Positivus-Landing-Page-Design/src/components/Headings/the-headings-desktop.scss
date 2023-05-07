@@ -1,0 +1,21 @@
+.headings {
+  @include lg {
+    display: flex;
+    align-items: center;
+    margin: $rm-2-5 6.5rem;
+
+    &__description {
+      max-width: 50ch;
+    }
+
+    &__title {
+      padding: .2rem;
+      border-radius: .2rem;
+      background-color: $green;
+      font-weight: 800;
+      font-size: $rm-1-5;
+      text-align: center;
+      margin-right: $rm-1-5;
+    }
+  }
+}

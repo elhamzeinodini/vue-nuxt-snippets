@@ -1,0 +1,29 @@
+@include sm{
+  .card{
+    margin: 4.5rem $rm-1-5;
+    background-color: $gray;
+    border-radius: $rm-2-5;
+    padding: $rm-2;
+
+    &__content{
+      height: 17rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title{
+      font-size: $rm-1-5;
+      font-weight: 700;
+    }
+
+    &__img{
+      display: none;
+    }
+
+    &__btn{
+      background-color: $black;
+      color: $white;
+      width: 100%;
+    }
+  }
+}

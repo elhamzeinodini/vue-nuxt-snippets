@@ -1,0 +1,32 @@
+@include lg {
+  .cases {
+    margin: 5rem 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    border-radius: $rm-3;
+    padding: $rm-2-5;
+    height: 15rem;
+
+    &__content{
+      margin-left: 1rem;
+    }
+
+    &__description {
+      color: $white;
+      width: 20rem;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      margin-top: $rm-1;
+
+      &__text {
+        color: $green;
+      }
+    }
+
+  }
+}

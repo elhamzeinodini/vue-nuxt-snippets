@@ -1,0 +1,67 @@
+@include sm{
+  .services{
+    margin-block: $rm-2;
+
+    &__list{
+      margin-inline: $rm-2;
+    }
+
+    &__box{
+      border: 1px solid $black;
+      border-radius: $rm-2-5;
+      padding: $rm-2;
+      border-bottom: 7px solid $black;
+      margin-block: $rm-2;
+      position: relative;
+
+      &__content{
+
+        &__title{
+          font-size: $rm-2;
+          font-weight: 700;
+          border-radius: .3rem;
+          margin-bottom: 4rem;
+        }
+
+        &__link{
+          &__text{
+            display: none;
+          }
+        }
+      }
+
+      &__img{
+        &__item{
+          width: 7rem;
+          height: 7rem;
+          position: absolute;
+          inset: auto $rm-1 $rm-1 auto;
+        }
+      }
+
+      &--one, &--four{
+        background-color: $gray;
+        & .services__box__content__link__img{
+          @include arrowIcon($black)
+        }
+      }
+
+      &--two, &--five{
+        background-color: $green;
+
+        & .services__box__content__link__img{
+          @include arrowIcon($black)
+        }
+      }
+
+      &--three, &--six{
+        background-color: $black;
+        & .services__box__content__link__img{
+          @include arrowIcon($white)
+        }
+      }
+
+    }
+
+  }
+}

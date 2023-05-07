@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import TheHeadings from "../Headings/TheHeadings.vue";
 import {ref} from "vue";
 
 const servicesImgs = ref([
@@ -12,12 +13,10 @@ const servicesImgs = ref([
 </script>
 
 <template>
+    <the-headings
+            subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
+            title="Services"></the-headings>
     <section class="services">
-        <div class="services__header">
-            <span class="services__title">Services</span>
-            <p class="services__description">At our digital marketing agency, we offer a range of services to help
-                businesses grow and succeed online. These services include:</p>
-        </div>
         <div class="services__list lg:grid lg:grid-cols-2 lg:gap-5">
             <div v-for="item in servicesImgs" :key="item.id" :class="'services__box services__box--' + item.id">
                 <div class="services__box__content">
@@ -41,4 +40,5 @@ const servicesImgs = ref([
 
 <style lang="scss" scoped>
 @import './the-services-desktop.scss';
+@import './the-services-mobile.scss';
 </style>

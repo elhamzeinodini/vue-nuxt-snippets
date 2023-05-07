@@ -1,0 +1,29 @@
+.cases{
+  @include sm{
+    border: 1px solid red;
+    margin: 0 1.5rem;
+    display: flex;
+
+    &__content{
+      background-color: $black;
+      border-radius: $rm-2-5;
+      padding: $rm-2;
+      width: 21rem;
+      height: 15rem;
+    }
+
+    &__description{
+      color: $white;
+    }
+
+    &__btn{
+      display: flex;
+      align-items: center;
+      margin-top: $rm-1;
+
+      &__text{
+        color: green;
+      }
+    }
+  }
+}

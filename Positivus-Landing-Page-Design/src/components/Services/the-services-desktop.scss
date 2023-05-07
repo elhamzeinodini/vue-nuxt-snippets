@@ -1,128 +1,109 @@
-.services {
-  padding: 2rem 6rem;
+@include lg {
+  .services {
+    padding: 2rem 6rem;
 
-  &__header {
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 5rem;
-  }
-
-  &__description {
-    max-width: 50ch;
-  }
-
-  &__title {
-    padding: .2rem;
-    border-radius: .2rem;
-    background-color: $green;
-    font-weight: 800;
-    font-size: $rm-2;
-  }
-
-
-  &__box {
-    border: 2px solid $black;
-    border-bottom: 7px solid $black;
-    width: 100%;
-    border-radius: $rm-2-5;
-    padding: $rm-2-5 $rm-2;
-    display: flex;
-    justify-content: space-between;
-
-    &__content {
-      width: 50%;
+    &__box {
+      border: 2px solid $black;
+      border-bottom: 7px solid $black;
+      width: 100%;
+      border-radius: $rm-2-5;
+      padding: $rm-2-5 $rm-2;
       display: flex;
       justify-content: space-between;
-      flex-direction: column;
 
-      &__title {
-        font-weight: 800;
-        border-radius: .3rem;
-        font-size: $rm-1-5;
-      }
-
-      &__link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 55%;
-
-        &__img {
-          cursor: pointer;
-        }
-
-        &__text {
-          font-weight: 700;
-        }
-      }
-    }
-
-    &--one {
-      background-color: $gray;
-
-      & .services__box__content__link__img {
-        @include arrowIcon($black);
-      }
-
-    }
-
-    &--two {
-      background-color: $green;
-
-      & .services__box__content__link__img {
-        @include arrowIcon($black);
-      }
-    }
-
-    &--three {
-      background-color: $black;
-
-      & .services__box__content__link__img {
-        @include arrowIcon($white);
-      }
-
-      & .services__box__content__link__text {
-        color: $white;
-      }
-    }
-
-    &--four {
-      background-color: $gray;
-
-      & .services__box__content__link__img {
-        @include arrowIcon($black);
-      }
-
-      & .services__box__content__title {
+      &__content {
         width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &__title {
+          font-weight: 800;
+          border-radius: .3rem;
+          font-size: $rm-1-5;
+        }
+
+        &__link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 55%;
+
+          &__img {
+            cursor: pointer;
+          }
+
+          &__text {
+            font-weight: 700;
+          }
+        }
       }
-    }
 
-    &--five {
-      background-color: $light-green;
+      &--one {
+        background-color: $gray;
 
-      & .services__box__content__link__img {
-        @include arrowIcon($black);
+        & .services__box__content__link__img {
+          @include arrowIcon($black);
+        }
+
       }
 
-      & .services__box__content__title {
-        width: 40%;
-      }
-    }
+      &--two {
+        background-color: $green;
 
-    &--six {
-      background-color: $black;
-
-      & .services__box__content__link__img {
-        @include arrowIcon($white);
+        & .services__box__content__link__img {
+          @include arrowIcon($black);
+        }
       }
 
-      & .services__box__content__link__text {
-        color: $white;
+      &--three {
+        background-color: $black;
+
+        & .services__box__content__link__img {
+          @include arrowIcon($white);
+        }
+
+        & .services__box__content__link__text {
+          color: $white;
+        }
       }
 
+      &--four {
+        background-color: $gray;
+
+        & .services__box__content__link__img {
+          @include arrowIcon($black);
+        }
+
+        & .services__box__content__title {
+          width: 50%;
+        }
+      }
+
+      &--five {
+        background-color: $light-green;
+
+        & .services__box__content__link__img {
+          @include arrowIcon($black);
+        }
+
+        & .services__box__content__title {
+          width: 40%;
+        }
+      }
+
+      &--six {
+        background-color: $black;
+
+        & .services__box__content__link__img {
+          @include arrowIcon($white);
+        }
+
+        & .services__box__content__link__text {
+          color: $white;
+        }
+
+      }
     }
   }
 }
