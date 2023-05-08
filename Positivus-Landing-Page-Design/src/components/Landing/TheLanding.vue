@@ -12,7 +12,7 @@ const corpImgs = reactive({
 </script>
 
 <template>
-    <section class="landing">
+    <section class="landing lg:mx-[6.5rem] lg:my-[2.5rem]">
         <div class="landing__data">
             <div class="landing__content">
                 <h1 class="landing__title">Navigating the digital landscape for success</h1>

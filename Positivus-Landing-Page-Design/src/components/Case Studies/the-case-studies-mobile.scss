@@ -1,19 +1,20 @@
 .cases{
   @include sm{
-    border: 1px solid red;
-    margin: 0 1.5rem;
+    margin: $rm-1 $rm-1-5;
     display: flex;
 
     &__content{
       background-color: $black;
       border-radius: $rm-2-5;
       padding: $rm-2;
-      width: 21rem;
-      height: 15rem;
+      width: 17rem;
+      height: 12rem;
+      margin-right: .3rem;
     }
 
     &__description{
       color: $white;
+      font-size: $rm-0-75;
     }
 
     &__btn{

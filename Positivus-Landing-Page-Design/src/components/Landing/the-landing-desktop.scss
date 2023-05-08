@@ -1,7 +1,5 @@
 @include lg{
   .landing{
-    padding: 2rem 6rem;
-
     &__data{
       display: flex;
       justify-content: space-between;
@@ -32,7 +30,8 @@
     }
 
     &__corp{
-      margin-block: $rm-3;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;

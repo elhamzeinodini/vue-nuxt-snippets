@@ -1,0 +1,67 @@
+@include lg {
+  .faq {
+    &__content {
+      border: 2px solid $black;
+      border-bottom: 7px solid $black;
+      border-radius: $rm-2-5;
+      padding: $rm-2 $rm-1-5;
+      margin-bottom: $rm-1-5;
+      background-color: $gray;
+
+      &--show {
+        height: 15rem;
+        transition: .3s;
+      }
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__title {
+        display: flex;
+        align-items: center;
+
+        &__num {
+          font-size: $rm-3;
+          font-weight: 800;
+          margin-right: $rm-2;
+        }
+
+        &__text {
+          font-size: $rm-1-5;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__icon {
+      width: $rm-3;
+      height: $rm-3;
+      border-radius: 50%;
+      border: 1px solid $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__item {
+        font-size: $rm-3;
+        cursor: pointer;
+      }
+    }
+
+    &__description {
+      margin-top: $rm-2;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1rem;
+        border-bottom: 1px solid $black;
+        margin-top: -2rem;
+      }
+    }
+  }
+}

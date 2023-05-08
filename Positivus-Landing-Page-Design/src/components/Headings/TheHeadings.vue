@@ -1,5 +1,5 @@
 <template>
-    <section class="headings">
+    <section class="headings lg:mx-[6.5rem] lg:my-[2.5rem]">
             <span class="headings__title">{{ title }}</span>
             <p class="headings__description">{{ subtitle }}</p>
     </section>
