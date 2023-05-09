@@ -1,0 +1,61 @@
+@include sm{
+  .faq{
+    &__content{
+      border: 2px solid $black;
+      border-bottom: 7px solid $black;
+      border-radius: $rm-2-5;
+      padding: $rm-1-5 $rm-1;
+      margin-bottom: $rm-1;
+    }
+
+    &--show{
+      height: 10rem;
+    }
+
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__title{
+        display: flex;
+        &__num{
+          font-size: $rm-2;
+          font-weight: 700;
+          margin-right: $rm-1;
+        }
+        &__text{
+          width: 10rem;
+          font-size: .9rem;
+          font-weight: 500;
+          margin-top: $rm-0-75;
+        }
+      }
+    }
+
+    &__icon{
+      width: $rm-1-5;
+      height: $rm-1-5;
+      border-radius: 50%;
+      border: 1px solid $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $rm-1-5;
+      &__item{
+        cursor: pointer;
+      }
+    }
+
+    &__description{
+      margin-top: $rm-1;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 1rem;
+        border-bottom: 1px solid $black;
+        margin-top: -1.5rem;
+      }
+    }
+  }
+}

@@ -66,7 +66,7 @@ const showAnswer = (id: string) => {
 <template>
     <the-headings subtitle="Step-by-Step Guide to Achieving Your Business Goals"
                   title="Our Working Process"></the-headings>
-    <section class="faq lg:mx-[6.5rem] lg:my-[4rem]">
+    <section class="faq lg:mx-[6.5rem] lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem]">
         <div v-for="faq in faqData" :key="faq.id" :class="{'faq__content--show' : faq.visible}"
              class="faq__content">
             <div class="faq__header">
