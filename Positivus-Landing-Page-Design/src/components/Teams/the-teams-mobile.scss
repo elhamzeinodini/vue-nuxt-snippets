@@ -1,0 +1,41 @@
+@include sm{
+  .teams {
+    display: flex;
+    flex-direction: column;
+    &__card{
+      padding: $rm-1-5;
+      &__header{
+        &::after {
+          content: "";
+          border: 1px solid darkgray;
+          position: absolute;
+          inset: 6.5rem auto auto auto;
+        }
+        &__img{
+          width: 5rem;
+          height: 5rem;
+        }
+        &__title{
+          margin-top: -1.5rem;
+        }
+        &__info{
+          font-size: $rm-0-75;
+        }
+        &__social{
+          width: 6rem;
+        }
+      }
+      &__description{
+        margin-top: $rm-3;
+        &__item{
+          font-size: $rm-0-75;
+        }
+      }
+    }
+    &__btn{
+      &__item{
+        width: 100%;
+      }
+    }
+  }
+}

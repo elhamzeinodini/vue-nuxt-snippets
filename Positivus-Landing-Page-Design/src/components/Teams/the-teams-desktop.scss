@@ -1,0 +1,55 @@
+.teams {
+  display: grid;
+  grid-template-columns: repeat(3, 375px);
+  gap: $rm-1;
+
+  &__card {
+    padding: $rm-2;
+
+    &__header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $rm-2;
+
+      &::after {
+        content: "";
+        width: 100%;
+        border: 1px solid darkgray;
+        position: absolute;
+        inset: 8rem auto auto auto;
+      }
+
+      &__info {
+        width: 30rem;
+        margin-top: 4rem;
+        font-size: .9rem;
+        margin-left: $rm-1;
+      }
+
+      &__title {
+        font-weight: 600;
+        margin-bottom: .2rem;
+      }
+
+      &__social {
+        background-color: $black;
+        width: 5rem;
+        height: $rm-2;
+        border-radius: 50%;
+        color: $light-green;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__btn{
+    &__item{
+      background-color: $black;
+      color: $white;
+      float: right;
+    }
+  }
+}

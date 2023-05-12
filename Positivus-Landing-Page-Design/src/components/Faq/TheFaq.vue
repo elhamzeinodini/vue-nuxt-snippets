@@ -68,7 +68,7 @@ const showAnswer = (id: string) => {
                   title="Our Working Process"></the-headings>
     <section class="faq lg:mx-[6.5rem] lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem]">
         <div v-for="faq in faqData" :key="faq.id" :class="{'faq__content--show' : faq.visible}"
-             class="faq__content">
+             class="faq__content rounded-[2.5rem] border-2 border-black border-b-[7px]">
             <div class="faq__header">
                 <div class="faq__header__title">
                     <span class="faq__header__title__num">{{ faq.order }}</span>

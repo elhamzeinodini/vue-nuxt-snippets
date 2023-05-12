@@ -1,0 +1,22 @@
+#pot {
+  bottom: 15%;
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+// when the arrow is clicked go to left or right
+// give index to indicators when you click on the array , the element moves
+// index + 1 indicator is green

@@ -1,9 +1,6 @@
 @include lg {
   .faq {
     &__content {
-      border: 2px solid $black;
-      border-bottom: 7px solid $black;
-      border-radius: $rm-2-5;
       padding: $rm-2 $rm-1-5;
       margin-bottom: $rm-1-5;
       background-color: $gray;

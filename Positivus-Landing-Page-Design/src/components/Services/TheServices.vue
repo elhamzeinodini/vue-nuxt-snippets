@@ -2,7 +2,11 @@
 import TheHeadings from "../Headings/TheHeadings.vue";
 import {ref} from "vue";
 
-const servicesImgs = ref([
+interface Services {
+    [key: number]: { img: string, title: string, id: string, color: string }
+}
+
+const servicesImgs = ref<Services>([
     {img: "/images/seo.svg", title: "Search engine optimization", id: "one", color: "#B9FF66"},
     {img: "/images/advertise.svg", title: "Pay-per-click advertising", id: "two", color: "#fff"},
     {img: "/images/social-media.svg", title: "Social Media Marketing", id: "three", color: "#fff"},
