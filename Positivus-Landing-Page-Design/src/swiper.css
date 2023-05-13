@@ -1,0 +1,37 @@
+:root {
+    --swiper-theme-color: #B9FF66 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 27rem !important;
+}
+
+.swiper-button-prev {
+    left: 18rem !important;
+    background-image: url("/images/arrow-left.svg") !important;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+    right: 18rem !important;
+    background-image: url("/images/arrow-right.svg") !important;
+    background-repeat: no-repeat;
+}
+
+
+/* remove default icons */
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+    display: none;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 375px) {
+    .swiper-button-prev {
+        left: 15.5rem !important;
+    }
+
+    .swiper-button-next {
+        right: 15.5rem !important;
+    }
+}

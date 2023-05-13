@@ -11,12 +11,18 @@
 body{
   box-sizing: border-box;
   min-height: 100vh;
-  width: 100vw;
 }
 
 ul,li{
   list-style-type: none;
 }
+
+@media only screen and (min-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+}
+
 
 @tailwind base;
 @tailwind components;

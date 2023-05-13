@@ -1,22 +1,38 @@
-#pot {
-  bottom: 15%;
-  position: absolute;
-  -webkit-animation: linear infinite;
-  -webkit-animation-name: run;
-  -webkit-animation-duration: 5s;
+.testimonial{
+  background-color: $black;
+  padding: $rm-2;
+  &__info{
+    &__subtitle{
+      border: 1px solid $green;
+      padding: $rm-2;
+      width: 60%;
+      margin-inline: auto;
+      border-radius: $rm-3;
+      position: relative;
+      &::after{
+        content : "";
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $green;
+        position: absolute;
+        inset: auto auto -1rem 3rem;
+        border-left: 2px;
+        border-top: 2px;
+        transform: rotate(45deg);
+        background-color: $black;
+      }
+    }
+    &__name{
+      color: $green;
+      margin-top: $rm-3;
+      font-weight: 600;
+    }
+    &__name,&__position{
+      width: 45%;
+      margin-inline: auto;
+    }
+    &__position{
+      margin-bottom: 7rem;
+    }
+  }
 }
-@-webkit-keyframes run {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-
-// when the arrow is clicked go to left or right
-// give index to indicators when you click on the array , the element moves
-// index + 1 indicator is green

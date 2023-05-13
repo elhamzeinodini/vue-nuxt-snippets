@@ -1,0 +1,52 @@
+@include sm{
+  .footer{
+    font-size: .9rem;
+    @include flex-col();
+    &__nav{
+      @include flex-col();
+      &__links{
+        @include flex-col();
+        margin-block: $rm-1-5;
+       &__items{
+         text-decoration: none;
+         margin-block: $rm-0-75;
+       }
+      }
+    }
+
+    &__reg{
+      @include flex-col();
+      width: 18rem;
+      &__info{
+        text-align: center;
+        margin-block: $rm-1-5;
+      }
+      &__form{
+        width: 100%;
+        @include  flex-col();
+        & button{
+          width: 100%;
+        }
+        & input{
+          width: 100%;
+          margin-inline: auto;
+          padding: $rm-0-75;
+          margin-bottom: $rm-1;
+        }
+      }
+    }
+    &__text{
+      width: 18rem;
+      &__item{
+        @include flex-col();
+        font-size: .9rem;
+        & p{
+          text-align: center;
+        }
+        & span{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@include sm{
+  .form{
+    padding: $rm-2 $rm-1-5;
+    &__info{
+      width: 100%;
+    }
+    &__btn{
+      width: 85%;
+      margin-inline: auto;
+      &--desktop{
+        display: none;
+      }
+      &--mobile{
+        display: block;
+        text-align: center;
+      }
+    }
+    &__img{
+      display: none;
+    }
+  }
+}

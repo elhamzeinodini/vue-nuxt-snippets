@@ -1,0 +1,17 @@
+@include sm{
+  .testimonial{
+    padding: $rm-0-5 !important;
+    &__info{
+      font-size: $rm-0-75;
+      &__subtitle{
+        width: 100%;
+        font-size: $rm-0-75;
+      }
+      &__name,
+      &__position{
+        width: 70%;
+        margin-left: 4rem;
+      }
+    }
+  }
+}

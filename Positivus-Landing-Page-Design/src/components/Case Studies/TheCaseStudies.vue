@@ -11,9 +11,9 @@ const casesText = ref<string[]>([
 
 <template>
     <the-headings
-        subtitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
-        title="Case Studies"></the-headings>
-    <section class="cases divide-x sm:overflow-x-scroll lg:mx-[6.5rem] lg:my-[4rem]">
+            subtitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+            title="Case Studies"></the-headings>
+    <section class="cases lg:divide-x sm:overflow-x-scroll lg:mx-[6.5rem] lg:my-[4rem]">
         <div v-for="text in casesText" :key="text" class="cases__list">
             <div class="cases__content">
                 <p class="cases__description">{{ text }}</p>

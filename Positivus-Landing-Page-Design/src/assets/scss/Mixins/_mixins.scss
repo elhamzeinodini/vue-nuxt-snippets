@@ -1,0 +1,10 @@
+@mixin arrowIcon($clr){
+  border-radius: 50%;
+  background-color: $clr !important;
+}
+
+@mixin flex-col(){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
