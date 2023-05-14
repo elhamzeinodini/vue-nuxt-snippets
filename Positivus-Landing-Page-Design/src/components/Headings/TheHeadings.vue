@@ -18,4 +18,5 @@ const props = defineProps<Props>()
 <style lang="scss">
 @import './the-headings-desktop.scss';
 @import './the-headings-mobile.scss';
+@import './the-headings-tablet.scss';
 </style>

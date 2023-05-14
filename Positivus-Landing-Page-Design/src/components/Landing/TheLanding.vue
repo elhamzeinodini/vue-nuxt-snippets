@@ -36,4 +36,5 @@ const corpImgs = reactive({
 <style lang="scss">
 @import './the-landing-desktop.scss';
 @import './the-landing-mobile.scss';
+@import './the-landing-tablet.scss';
 </style>

@@ -45,4 +45,5 @@ const servicesImgs = ref<Services>([
 <style lang="scss" scoped>
 @import './the-services-desktop.scss';
 @import './the-services-mobile.scss';
+@import './the-services-tablet.scss';
 </style>

@@ -17,10 +17,16 @@ ul,li{
   list-style-type: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1282px) {
   body{
     overflow-x: hidden;
     padding: 0 6.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1281px) {
+  body{
+    padding: 0 2rem;
   }
 }
 

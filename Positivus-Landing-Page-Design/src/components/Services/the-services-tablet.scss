@@ -1,0 +1,76 @@
+@include md{
+  .services{
+    margin-block: $rm-2;
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(2, 360px);
+      gap: $rm-1-5;
+    }
+
+    &__box{
+      height: 12rem;
+      border: 1px solid $black;
+      border-radius: $rm-2-5;
+      padding: $rm-1-5;
+      border-bottom: 7px solid $black;
+      display: flex;
+      justify-content: space-between;
+
+      &__content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__title{
+          width: 70%;
+        }
+
+        &__link{
+          display: flex;
+          align-items: center;
+          &__img{
+            width: $rm-1-5;
+            margin-right: $rm-0-5;
+          }
+          &__text{
+            font-size: $rm-0-75;
+          }
+        }
+      }
+
+      &__img{
+        width: 9rem;
+      }
+
+      &--one, &--four{
+        background-color: $gray;
+        & .services__box__content__link__img{
+          background-color: $black;
+          border-radius: 50%;
+        }
+      }
+
+      &--two, &--five{
+        background-color: $green;
+        & .services__box__content__link__img{
+          background-color: $black;
+          border-radius: 50%;
+        }
+      }
+
+      &--three, &--six{
+        background-color: $black;
+        & .services__box__content__link__text{
+          color: $white;
+        }
+        & .services__box__content__link__img{
+          background-color: $white;
+          border-radius: 50%;
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,31 +1,12 @@
-@include sm {
-  .nav {
-    padding: $rm-1-5 1.25rem;
+@include md{
+  .nav{
+    margin-block: $rm-1-5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
-    position: relative;
-
-    &__bars {
-      display: block;
-      cursor: pointer;
-    }
-
-    &__close {
-      width: 9rem;
-      height: $rm-1-5;
-      position: absolute;
-      inset: $rm-1-5 -2.5rem auto auto;
-      cursor: pointer;
-    }
-
-    &__logo {
-      &__item {
-        width: 9rem;
-        height: $rm-1-5;
-
-        &--desktop {
+    &__logo{
+      &__item{
+        &--desktop{
           display: none;
         }
       }
@@ -47,6 +28,14 @@
       }
     }
 
+    &__close {
+      width: 9rem;
+      height: $rm-1-5;
+      position: absolute;
+      inset: $rm-1-5 -2.5rem auto auto;
+      cursor: pointer;
+    }
+
     &__links {
       margin-top: $rm-3;
     }
@@ -54,12 +43,6 @@
     &__items {
       padding: $rm-1 0;
       cursor: pointer;
-    }
-
-    &__btn {
-      margin-top: $rm-1-5;
-      height: $rm-3;
-      width: 100%;
     }
 
   }

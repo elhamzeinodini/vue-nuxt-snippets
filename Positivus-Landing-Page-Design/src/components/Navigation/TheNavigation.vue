@@ -44,4 +44,5 @@ const closeMenu = () => {
 <style lang="scss">
 @import 'the-navigation-desktop';
 @import 'the-navigation-mobile';
+@import 'the-navigation-tablet';
 </style>

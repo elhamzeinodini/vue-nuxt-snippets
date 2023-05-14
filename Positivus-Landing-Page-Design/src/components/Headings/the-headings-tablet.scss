@@ -1,0 +1,14 @@
+@include md{
+  .headings{
+    margin-block: $rm-2;
+    display: flex;
+    align-items: flex-start;
+    &__title{
+      background-color: $green;
+      margin-right: $rm-0-75;
+    }
+    &__description{
+      font-size: $rm-0-75;
+    }
+  }
+}

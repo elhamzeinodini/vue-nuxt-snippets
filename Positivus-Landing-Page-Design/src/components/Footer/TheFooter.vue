@@ -13,12 +13,12 @@ const userMail = ref<String>("")
                 <img alt="logo" class="footer__nav__logo__item" src="/images/logo-white.svg"/>
             </div>
             <ul class="footer__nav__links">
-                <li v-for="(link, inedx) in links" :key="index" class="footer__nav__links__items">
+                <li v-for="(link, index) in links" :key="index" class="footer__nav__links__items">
                     {{ link }}
                 </li>
             </ul>
             <div class="footer__nav__icons">
-                <img v-for="(icon, index) in icons" :key="icon" :src="icon" alt="social media icon"
+                <img v-for="(icon, index) in icons" :key="index" :src="icon" alt="social media icon"
                      class="footer__nav__icons__item"/>
             </div>
         </div>

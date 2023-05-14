@@ -11,8 +11,12 @@ $rm-3: 3rem;
 $screen-sm-min: 375px;
 $screen-sm-max: 767px;
 
-// Tablets and small desktops
-$screen-lg-min: 768px;
+// small desktops
+$screen-lg-min: 1282px;
+
+// Tablets
+$screen-md-min: 768px;
+$screen-md-max: 1281px;
 
 
 // colors

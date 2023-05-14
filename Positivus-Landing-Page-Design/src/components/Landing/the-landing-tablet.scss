@@ -1,0 +1,31 @@
+@include md{
+  .landing{
+    margin-block: $rm-3;
+    &__data{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__title{
+      font-size: $rm-2-5;
+      font-weight: 600;
+      max-width: 15ch;
+    }
+    &__description{
+      max-width: 60ch;
+      margin-block: $rm-1-5;
+    }
+    &__btn{
+      background-color: $black;
+      color: $white;
+    }
+
+    &__corp{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: $rm-3;
+      width: 60%;
+      margin-inline: auto;
+      gap: $rm-1;
+    }
+  }
+}
