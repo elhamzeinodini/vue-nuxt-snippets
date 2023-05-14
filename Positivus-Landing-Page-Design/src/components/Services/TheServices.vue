@@ -20,7 +20,7 @@ const servicesImgs = ref<Services>([
     <the-headings
             subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
             title="Services"></the-headings>
-    <section class="services lg:mx-[6.5rem] lg:my-[4rem]">
+    <section class="services lg:my-[4rem]">
         <div class="services__list lg:grid lg:grid-cols-2 lg:gap-5">
             <div v-for="item in servicesImgs" :key="item.id" :class="'services__box services__box--' + item.id">
                 <div class="services__box__content">

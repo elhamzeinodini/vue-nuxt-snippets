@@ -25,7 +25,7 @@ const sendData = (): void => {
 <template>
     <the-headings subtitle="Connect with Us: Let's Discuss Your Digital Marketing Needs"
                   title="Contact Us"></the-headings>
-    <form class="form lg:mx-[6.5rem] lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem]">
+    <form class="form lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem]">
         <div class="form__content">
             <div class="form__option">
                 <input v-model="option1" class="form__radio mr-2" name="say-hi" type="radio" @click="logSayHi"/>

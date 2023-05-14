@@ -1,5 +1,5 @@
 <template>
-    <section class="card lg:mx-[6.5rem] lg:my-[4rem]">
+    <section class="card lg:my-[4rem]">
         <div class="card__content">
             <h2 class="card__title">{{ text.title }}</h2>
             <p class="card__subtitle">{{ text.subtitle }}</p>

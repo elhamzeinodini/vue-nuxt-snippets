@@ -7,7 +7,7 @@ const userMail = ref<String>("")
 </script>
 
 <template>
-    <footer class="footer lg:mx-[6.5rem] lg:mt-[4rem] sm:mx-[1.5rem] sm:mt-[1.5rem]">
+    <footer class="footer lg:mt-[4rem] sm:mx-[1.5rem] sm:mt-[1.5rem]">
         <div class="footer__nav">
             <div class="footer__nav__logo">
                 <img alt="logo" class="footer__nav__logo__item" src="/images/logo-white.svg"/>

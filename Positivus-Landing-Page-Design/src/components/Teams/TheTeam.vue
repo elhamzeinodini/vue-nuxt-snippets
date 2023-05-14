@@ -59,7 +59,7 @@ const teamInfo = ref<TeamInfo>([
 <template>
     <the-headings subtitle="Meet the skilled and experienced team behind our successful digital marketing strategies"
                   title="Team"></the-headings>
-    <section class="teams lg:mx-[6.5rem] lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem]">
+    <section class="teams lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem]">
         <div v-for="info in teamInfo" :key="info.id"
              class="teams__card rounded-[2.5rem] border-2 border-black border-b-[7px]">
             <div class="teams__card__content">

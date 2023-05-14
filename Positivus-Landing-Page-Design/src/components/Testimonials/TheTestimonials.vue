@@ -9,7 +9,7 @@
             subtitle="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
             title="Testimonials"></the-headings>
     <section
-            class="testimonial lg:mx-[6.5rem] lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem] rounded-[2.5rem] px-2 py-2">
+            class="testimonial lg:my-[4rem] sm:mx-[1.5rem] sm:my-[1.5rem] rounded-[2.5rem] px-2 py-2">
         <swiper :cssMode="true"
                 :navigation="true"
                 :pagination="true"
