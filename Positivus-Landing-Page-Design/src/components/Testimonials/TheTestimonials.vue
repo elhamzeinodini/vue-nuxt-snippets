@@ -1,6 +1,7 @@
 <style lang="scss" scoped>
 @import './the-testimonials-desktop.scss';
 @import './the-testimonials-mobile.scss';
+@import './the-testimonials-tablet.scss';
 </style>
 
 

@@ -87,5 +87,6 @@ const teamInfo = ref<TeamInfo>([
 <style lang="scss" scoped>
 @import './the-teams-desktop.scss';
 @import './the-teams-mobile.scss';
+@import './the-teams-tablet.scss';
 </style>
 

@@ -3,7 +3,7 @@
     margin-block: $rm-2;
     &__list{
       display: grid;
-      grid-template-columns: repeat(2, 360px);
+      grid-template-columns: repeat(2, 3fr);
       gap: $rm-1-5;
     }
 

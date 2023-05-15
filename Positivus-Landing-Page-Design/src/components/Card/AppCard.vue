@@ -30,4 +30,5 @@ const text: CardText = reactive({
 <style lang="scss" scoped>
 @import "./app-card-desktop.scss";
 @import './app-card-mobile.scss';
+@import './app-card-tablet.scss';
 </style>

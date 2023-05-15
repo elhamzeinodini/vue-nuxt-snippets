@@ -21,11 +21,12 @@
 
     &__corp{
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       margin-top: $rm-3;
-      width: 60%;
-      margin-inline: auto;
+      width: 45%;
       gap: $rm-1;
+      margin-inline: auto;
     }
   }
 }

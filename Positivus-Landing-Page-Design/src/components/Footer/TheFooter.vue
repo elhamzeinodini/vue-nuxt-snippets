@@ -47,4 +47,5 @@ const userMail = ref<String>("")
 <style lang="scss" scoped>
 @import './the-footer-desktop.scss';
 @import './the-footer-mobile.scss';
+@import './the-footer-tablet.scss';
 </style>

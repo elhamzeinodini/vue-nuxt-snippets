@@ -1,0 +1,38 @@
+@include md{
+  .card{
+    margin-block: 4rem;
+    background-color: $gray;
+    padding: $rm-1-5 $rm-2;
+    border-radius: $rm-2-5;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80%;
+      height: 12rem;
+    }
+
+    &__title{
+      font-size: $rm-1-5;
+      font-weight: 700;
+    }
+
+    &__subtitle{
+      font-size: .9rem;
+    }
+
+    &__btn{
+      background-color: $black;
+      width: 50%;
+      color: $white;
+    }
+
+    &__img{
+      margin-top: -3rem;
+    }
+  }
+}

@@ -13,7 +13,7 @@ const casesText = ref<string[]>([
     <the-headings
             subtitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
             title="Case Studies"></the-headings>
-    <section class="cases lg:divide-x sm:overflow-x-scroll lg:my-[4rem]">
+    <section class="cases lg:divide-x md:divide-x sm:overflow-x-scroll lg:my-[4rem]">
         <div v-for="text in casesText" :key="text" class="cases__list">
             <div class="cases__content">
                 <p class="cases__description">{{ text }}</p>
@@ -29,4 +29,5 @@ const casesText = ref<string[]>([
 <style lang="scss" scoped>
 @import './the-case-studies-desktop.scss';
 @import './the-case-studies-mobile.scss';
+@import './the-case-studies-tablet.scss';
 </style>

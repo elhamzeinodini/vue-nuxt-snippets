@@ -58,4 +58,5 @@ const sendData = (): void => {
 <style lang="scss" scoped>
 @import './the-form-desktop.scss';
 @import './the-form-mobile.scss';
+@import './the-form-tablet.scss';
 </style>

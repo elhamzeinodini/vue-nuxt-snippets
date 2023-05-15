@@ -1,0 +1,30 @@
+@include md{
+  .cases{
+    background-color: $black;
+    border-radius: $rm-3;
+    padding: $rm-2-5;
+    height: 15rem;
+    display: flex;
+
+    &__description{
+      color: $white;
+      font-size: $rm-0-75;
+      margin-inline: $rm-1;
+    }
+
+    &__btn{
+      display: flex;
+      align-items: center;
+      margin: $rm-1-5 auto auto $rm-1;
+      &__text{
+        color: $green;
+        font-size: $rm-0-75;
+      }
+      &__icon{
+        width: $rm-2;
+        height: $rm-2;
+        cursor: pointer;
+      }
+    }
+  }
+}

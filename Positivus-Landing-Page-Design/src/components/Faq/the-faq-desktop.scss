@@ -1,13 +1,13 @@
 @include lg {
   .faq {
     &__content {
-      padding: $rm-2 $rm-1-5;
+      padding: $rm-2 $rm-2;
       margin-bottom: $rm-1-5;
       background-color: $gray;
+      transition: all .3s ease-in-out;
 
       &--show {
         height: 15rem;
-        transition: .3s;
       }
     }
 

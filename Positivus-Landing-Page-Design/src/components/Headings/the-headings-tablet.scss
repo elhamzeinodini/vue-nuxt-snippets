@@ -1,8 +1,8 @@
 @include md{
   .headings{
-    margin-block: $rm-2;
+    margin-block: 4rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     &__title{
       background-color: $green;
       margin-right: $rm-0-75;

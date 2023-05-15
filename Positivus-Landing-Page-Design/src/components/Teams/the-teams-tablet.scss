@@ -1,0 +1,27 @@
+@include md{
+  .teams{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card{
+      width: 49%;
+      margin-inline: auto;
+
+      &__header{
+          &__subtitle{
+            font-size: $rm-0-75;
+          }
+      }
+
+      &__description{
+       &__item{
+         font-size: .75rem;
+       }
+      }
+    }
+    &__btn{
+      width: 100%;
+    }
+  }
+}

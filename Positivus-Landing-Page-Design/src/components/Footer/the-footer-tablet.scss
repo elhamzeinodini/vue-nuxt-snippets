@@ -1,0 +1,22 @@
+@include md {
+  .footer {
+    margin-top: $rm-3;
+
+    &__nav {
+      &__links {
+        width: 18rem;
+
+        &__items {
+          font-size: $rm-0-75;
+        }
+      }
+    }
+
+    &__reg {
+      &__form {
+        padding: $rm-2;
+        font-size: $rm-0-75;
+      }
+    }
+  }
+}

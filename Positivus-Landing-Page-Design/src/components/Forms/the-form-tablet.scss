@@ -1,0 +1,12 @@
+@include md{
+  .form{
+
+    &__info, &__btn{
+      width: 100%;
+    }
+
+    &__img{
+      display: none;
+    }
+  }
+}

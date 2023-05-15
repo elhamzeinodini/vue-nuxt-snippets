@@ -91,4 +91,5 @@ const showAnswer = (id: string) => {
 <style lang="scss" scoped>
 @import './the-faq-desktop.scss';
 @import './the-faq-mobile.scss';
+@import './the-faq-tablet.scss';
 </style>
