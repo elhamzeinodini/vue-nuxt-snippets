@@ -1,0 +1,25 @@
+.home{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: $rm-3;
+    }
+    &__title{
+        text-align: center;
+        &__text{
+            display: block;
+            font-size: $rm-2-5;
+            &--down{
+                background: -webkit-linear-gradient($blue, $light-blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    &__subtitle{
+        font-weight: 400;
+        margin-top: $rm-1;
+    }
+}

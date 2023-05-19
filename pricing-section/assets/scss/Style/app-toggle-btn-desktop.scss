@@ -1,0 +1,46 @@
+.toggle {
+  border: 1px solid blue;
+  margin-top: 4rem;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+    margin-inline: auto;
+  }
+  &__item {
+    width: 5rem;
+    height: $rm-2;
+    border-radius: $rm-1;
+    background-color: $gray;
+    position: relative;
+    &--rotate {
+      background-color: $blue;
+    }
+    &__circle {
+      width: $rm-1-5;
+      height: $rm-1-5;
+      background-color: $white;
+      border-radius: 50%;
+      position: absolute;
+      inset: 0.25rem auto auto 0.3rem;
+      cursor: pointer;
+      transition: all 0.4s;
+      &--rotate {
+        transform: translateX(3rem);
+      }
+    }
+  }
+  &__svg {
+    float: right;
+    &__item {
+      transform: rotate(22deg);
+      margin-right: -1rem;
+    }
+    &__text {
+      color: $blue;
+      font-weight: 700;
+      margin-left: $rm-0-5;
+    }
+  }
+}
