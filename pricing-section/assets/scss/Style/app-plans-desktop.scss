@@ -1,0 +1,67 @@
+.plans {
+  width: 80vw;
+  margin-inline: auto;
+  padding: $rm-1-5;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  & :hover {
+    transition: 0.3s;
+    background-color: $blue;
+    color: $white;
+    border-radius: $rm-0-5;
+
+    & .plans__subtitle {
+      color: $white;
+    }
+
+    & button{
+      background-color: $white;
+      color: $blue;
+      border-color: $white;
+    }
+  }
+
+  &__data {
+    padding: $rm-2;
+  }
+
+  &__subtitle {
+    color: $gray-blue;
+    margin-block: $rm-1-5;
+    max-width: 40ch;
+    font-size: 0.9rem;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    &__num {
+      font-size: $rm-3;
+      margin-right: $rm-0-5;
+      font-weight: 700;
+    }
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+    margin-bottom: $rm-1;
+    &__icon {
+      margin-right: $rm-0-75;
+      width: 1rem;
+      height: 1rem;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: $very-light-blue;
+    }
+    &__title {
+      &--inactive {
+        color: $gray;
+      }
+    }
+  }
+}

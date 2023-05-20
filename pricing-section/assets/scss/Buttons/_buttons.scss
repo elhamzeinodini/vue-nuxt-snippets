@@ -1,0 +1,13 @@
+button{
+    all: unset;
+    font-family: inherit;
+    padding: .5rem 1rem;
+    border: 2px solid $blue;
+    border-radius: .3rem;
+    width: 80%;
+    text-align: center;
+    color: $blue;
+    font-weight: 600;
+    margin-block: $rm-1-5;
+    cursor: pointer;
+}

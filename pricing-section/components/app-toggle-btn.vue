@@ -2,9 +2,12 @@
   <section class="toggle">
     <div class="toggle__info">
       <span class="toggle__text">Pay Monthly</span>
-      <div :class="[{'toggle__item--rotate' : toggle},'toggle__item']">
+      <div :class="[{ 'toggle__item--rotate': toggle }, 'toggle__item']">
         <div
-          :class="[{'toggle__item__circle--rotate' : toggle}, 'toggle__item__circle']"
+          :class="[
+            { 'toggle__item__circle--rotate': toggle },
+            'toggle__item__circle',
+          ]"
           @click="handleToggleBtn"
         ></div>
       </div>
@@ -22,9 +25,14 @@
 </style>
 
 <script setup lang="ts">
-const toggle = ref<boolean>(false);
+import { useToggleStore } from "~/stores/toggle";
+import { storeToRefs } from "pinia";
 
-const handleToggleBtn = (): boolean => {
-  return (toggle.value = !toggle.value);
+const store = useToggleStore();
+
+let { toggle } = storeToRefs(store);
+
+const handleToggleBtn = () => {
+  store.toggle = !store.toggle;
 };
 </script>

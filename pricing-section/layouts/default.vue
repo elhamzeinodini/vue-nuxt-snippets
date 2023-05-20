@@ -6,7 +6,7 @@
 
 <style>
 .container{
-    width: 40vw;
+    width: 80vw;
     margin-inline: auto;
 }
 </style>

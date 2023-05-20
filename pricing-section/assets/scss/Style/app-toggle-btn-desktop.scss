@@ -1,11 +1,12 @@
 .toggle {
-  border: 1px solid blue;
   margin-top: 4rem;
+  width: 50%;
+  margin-inline: auto;
   &__info {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 55%;
+    width: 60%;
     margin-inline: auto;
   }
   &__item {
