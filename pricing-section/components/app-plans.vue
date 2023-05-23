@@ -1,11 +1,17 @@
 <template>
-  <section class="plans" v-show="!toggle">
+  <section class="plans">
     <div class="plans__data" v-for="plan in plans" :key="plan.title">
       <h3 class="plans__title">{{ plan.title }}</h3>
       <p class="plans__subtitle">{{ plan.subtitle }}</p>
       <p class="plans__price">
-        <span class="plans__price__num">{{ plan.price.monthly }}</span>
-        <span class="plans__price__text"> / Month</span>
+        <div class="plans__price" v-show="!toggle">
+          <span class="plans__price__num">{{ plan.price.monthly }}</span>
+          <span class="plans__price__text"> / Month</span>
+        </div>
+        <div class="plans__price" v-show="toggle">
+          <span class="plans__price__num">{{ plan.price.yearly }}</span>
+          <span class="plans__price__text"> / year</span>
+        </div>
       </p>
       <button>Get Started Now</button>
       <div

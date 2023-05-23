@@ -8,8 +8,7 @@
       <h3 class="home__subtitle">Choose a plan that’s right for you</h3>
     </div>
     <app-toggle-btn></app-toggle-btn>
-    <app-plans-monthly></app-plans-monthly>
-    <app-plans-yearly></app-plans-yearly>
+    <app-plans></app-plans>
   </section>
 </template>
 
