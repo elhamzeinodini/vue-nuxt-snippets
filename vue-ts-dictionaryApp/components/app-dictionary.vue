@@ -13,27 +13,27 @@
         <p>part of speech :</p>
         <p v-for="(parts, index) in wordPart" :key="index">{{ parts }}</p>
       </div>
-      <div v-show="definitonsInfo.nouns">
+      <div v-show="definitionsInfo.nouns">
         <span>nouns:</span>
-        <p v-for="(defs, index) in definitonsInfo.nouns" :key="index">
+        <p v-for="(defs, index) in definitionsInfo.nouns" :key="index">
           {{ defs }}
         </p>
       </div>
-      <div v-show="definitonsInfo.verbs">
+      <div v-show="definitionsInfo.verbs">
         <span>verbs:</span>
-        <p v-for="(defs, index) in definitonsInfo.verbs" :key="index">
+        <p v-for="(defs, index) in definitionsInfo.verbs" :key="index">
           {{ defs }}
         </p>
       </div>
-      <div v-show="definitonsInfo.adjective">
+      <div v-show="definitionsInfo.adjectives">
         <span>adjectives:</span>
-        <p v-for="(defs, index) in definitonsInfo.adjective" :key="index">
+        <p v-for="(defs, index) in definitionsInfo.adjectives" :key="index">
           {{ defs }}
         </p>
       </div>
-      <div v-show="definitonsInfo.interjections">
+      <div v-show="definitionsInfo.interjections">
         <span>interjections:</span>
-        <p v-for="(defs, index) in definitonsInfo.interjections" :key="index">
+        <p v-for="(defs, index) in definitionsInfo.interjections" :key="index">
           {{ defs }}
         </p>
       </div>
@@ -45,9 +45,6 @@
 import axios from "axios";
 import {
   dictionaryAPIResponse,
-  Meanings,
-  Phonetics,
-  Definitions,
   DefinitionsInfo,
 } from "./Interfaces/index";
 
@@ -60,7 +57,7 @@ const wordPhonetic = ref<string>("");
 const wordAudio = ref<string>("");
 const wordPart = ref<string[]>([]);
 
-const definitonsInfo: DefinitionsInfo = reactive({
+const definitionsInfo = reactive<DefinitionsInfo>({
   nouns: [],
   verbs: [],
   adjectives: [],
@@ -68,11 +65,11 @@ const definitonsInfo: DefinitionsInfo = reactive({
 });
 
 async function getTheWord() {
-  const { data } = await axios.get<dictionaryAPIResponse>(
+  const { data } = await axios.get<dictionaryAPIResponse[]>(
     `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput.value}`
   );
 
-  console.table(data);
+  // console.table(data);
 
   isResolved.value = true;
 
@@ -82,16 +79,11 @@ async function getTheWord() {
       word,
       phonetics,
       meanings,
-    }: {
-      phonetic: string;
-      word: string;
-      phonetics: Phonetics;
-      meanings: Meanings;
     }) => {
       wordText.value = word;
       wordPhonetic.value = phonetic;
 
-      phonetics.map(({ audio }: { audio: string }) => {
+      phonetics.map(({ audio }) => {
         wordAudio.value = audio;
       });
 
@@ -99,25 +91,22 @@ async function getTheWord() {
         ({
           definitions,
           partOfSpeech,
-        }: {
-          definitions: Definitions;
-          partOfSpeech: string;
         }) => {
           wordPart.value.push(partOfSpeech);
 
-          definitions.map(({ definition }: { definition: string }) => {
+          definitions.map(({ definition }) => {
             switch (partOfSpeech) {
               case "noun":
-                definitonsInfo.nouns.push(definition);
+                definitionsInfo.nouns.push(definition);
                 break;
               case "verb":
-                definitonsInfo.verbs.push(definition);
+                definitionsInfo.verbs.push(definition);
                 break;
               case "adjective":
-                definitonsInfo.adjectives.push(definition);
+                definitionsInfo.adjectives.push(definition);
                 break;
               case "interjection":
-                definitonsInfo.interjections.push(definition);
+                definitionsInfo.interjections.push(definition);
                 break;
             }
           });
