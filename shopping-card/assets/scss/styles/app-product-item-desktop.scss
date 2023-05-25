@@ -1,0 +1,25 @@
+.product{
+    border: 1px solid red;
+    width: 28rem;
+    margin: $rm-2-5 auto auto $rm-1-5;
+    &__title{
+        font-weight: 300;
+    }
+    &__subtitle{
+        margin-block: $rm-0-75;
+        display: block;
+        font-weight: 100;
+    }
+    &__variants{
+        cursor: pointer;
+        &__item {
+            display: inline-block;
+            border: 2px solid $dark-gray;
+            border-radius: .2rem;
+            margin-left: $rm-1;
+            &--selected{
+                border-color: $light-blue;
+            }
+        }
+    }
+}

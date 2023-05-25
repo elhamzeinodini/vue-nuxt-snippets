@@ -1,0 +1,22 @@
+.nav{
+    margin-top: $rm-2-5;
+    background-color: $light-gray;
+    padding-inline: $rm-1-5;
+    height: $rm-3-5;
+    display: flex;
+    align-items: center;
+    &__logo{
+        margin-top: -2rem;
+    }
+    &__links{
+        display: flex;
+        margin-left: $rm-1-5;
+    }
+    &__items{
+        margin-right: $rm-1-5;
+        cursor: pointer;
+        &--5, &--6, &--7{
+            color: $light-blue;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.config {
+  width: 28rem;
+  margin: $rm-2-5 auto auto $rm-1-5;
+  border: 1px solid red;
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-left: $rm-0-5;
+      color: $blue;
+      text-decoration: underline;
+      margin-block: $rm-1;
+    }
+    &::after {
+      content: "";
+      width: 80%;
+      border-bottom: 1px solid $dark-gray;
+      position: absolute;
+      inset: 3.5rem auto auto 0;
+    }
+  }
+  &__variants {
+    margin-top: $rm-2;
+    display: flex;
+    &__color {
+      display: flex;
+      justify-content: space-between;
+      width: 10rem;
+      margin-top: $rm-0-75;
+      &__item {
+        width: 1rem;
+        height: 1rem;
+        background-color: $off-black;
+        border-radius: 50%;
+        padding: $rm-0-5;
+        &--2 {
+          background-color: $brown;
+        }
+        &--3 {
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+}
