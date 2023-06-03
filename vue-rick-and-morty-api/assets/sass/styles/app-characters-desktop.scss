@@ -1,0 +1,48 @@
+.char {
+  background-color: $white;
+  width: 70vw;
+  height: 30rem;
+  border-radius: $rm-0-5;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow-y: scroll;
+  padding: $rm-1-5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $rm-1;
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    &__item {
+      border-radius: $rm-0-5;
+      width: 10rem;
+    }
+  }
+  &__info {
+    width: 100%;
+    height: 80%;
+    margin-left: $rm-1;
+  }
+  &__status {
+    margin-block: $rm-0-5;
+    display: flex;
+    align-items: center;
+    &__item {
+        width: $rm-0-75;
+        height: $rm-0-75;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: $rm-0-5;
+        &--alive{
+            background-color: green;
+        }
+        &--dead{
+            background-color: red;
+        }
+        &--unknown{
+            background-color: gray;
+        }
+    }
+  }
+}
