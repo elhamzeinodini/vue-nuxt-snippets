@@ -1,0 +1,26 @@
+.nav{
+    height: 7vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    &__left{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 8rem;
+        justify-content: space-between;
+    }
+    &__right{
+        &__input{
+            border: 1px solid $gray-500;
+            padding: $input-btn-padding-y $input-btn-padding-x;
+            width: 8rem;
+            border-radius: $border-radius-md;
+            background-image: url('/icons/search.svg');
+            background-repeat: no-repeat;
+            background-position: 5% center;
+            text-indent: $rm-1;
+            cursor: pointer;
+        }
+    }
+}

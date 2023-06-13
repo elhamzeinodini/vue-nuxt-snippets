@@ -1,0 +1,40 @@
+.stats{
+    &__content{
+        margin-block: $rm-2;
+        background-color: $white;
+        border-radius: $border-radius-md;
+        box-shadow: $box-shadow-sm;
+        padding: $rm-1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-weight: $font-weight-bold;
+        font-size: $font-size-sm;
+        color: $gray-600;
+    }
+    &__value{
+        font-weight: $font-weight-bolder;
+        font-size: $font-size-xl;
+        color: $gray-700;
+        margin-right: $rm-0-75;
+        display: inline-block;
+    }
+    &__rate{
+        font-weight: $font-weight-bold;
+        &--increased{
+            color: $success;
+        }
+        &--decreased{
+            color: $danger;
+        }
+    }
+    &__icon{
+        padding: $btn-padding-y;
+        background-image: linear-gradient(to left, $success-gradient, $success-gradient-state);
+        border-radius: $border-radius-md;
+        cursor: pointer;
+        box-sizing: $box-shadow-sm;
+    }
+}
