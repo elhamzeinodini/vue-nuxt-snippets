@@ -1,0 +1,14 @@
+.btn {
+  display: flex;
+  position: relative;
+  &__text {
+    color: $gray-700;
+    font-size: $text-sm-font-size;
+    font-weight: $font-weight-bold;
+    margin-right: $rm-0-5;
+  }
+  &__icon {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+}

@@ -11,6 +11,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
+$overlay : rgba(0,0 ,70,0.5) !default;
 
 $blue: #63b3ed !default;
 $indigo: #596cff !default;
@@ -33,11 +34,6 @@ $light: $gray-200 !default;
 
 
 // Gradient colors
-$gradient: linear-gradient(
-  180deg,
-  rgba($white, 0.15),
-  rgba($white, 0)
-) !default;
 $primary-gradient: #7928ca !default;
 $primary-gradient-state: #ff0080 !default;
 
@@ -64,6 +60,12 @@ $light-gradient-state: #ebeff4 !default;
 
 $dark-gradient-dark: #323a54 !default;
 $dark-gradient-state-dark: #1a2035 !default;
+
+$green-gradiant: linear-gradient(
+  to left,
+  $success-gradient,
+  $success-gradient-state
+);
 
 // Body
 $body-bg: $gray-100 !default;

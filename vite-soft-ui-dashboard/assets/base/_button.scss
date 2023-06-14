@@ -1,0 +1,18 @@
+@mixin button($clr: $green-gradiant) {
+  all: unset;
+  font-family: $btn-font-family;
+  box-sizing: border-box;
+  padding: $btn-padding-x $btn-padding-y;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  box-shadow: $btn-box-shadow;
+  background-image: $clr;
+  cursor: pointer;
+  color: $white;
+  border-radius: $border-radius-md;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: $rm-2;
+}

@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  // router : {
+  //   options: {
+  //     redirect : '/dashboard',
+  //   }
+  // },
   css: ["@/assets/css/style.css"],
   postcss: {
     plugins: {

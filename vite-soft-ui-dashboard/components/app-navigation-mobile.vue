@@ -17,12 +17,14 @@
           alt="expand"
           class="nav__left__bars__expand"
           v-show="!toggleMenu"
+          @click="store.handleSideNav"
         />
         <img
           src="/icons/fold.svg"
           alt="fold"
           class="nav__left__bars__fold"
           v-show="toggleMenu"
+          @click="store.handleSideNav"
         />
       </div>
       <nuxt-link to="/sign-in" class="nav__left__link"
@@ -41,8 +43,11 @@
 </template>
 
 <script setup lang="ts">
+import { useToggleStore } from "@/stores/useToggle";
+import { storeToRefs } from "pinia";
 const searchQuery = ref<string>("");
-const toggleMenu = ref<boolean>(false);
+const store = useToggleStore();
+const { toggleMenu } = storeToRefs(store);
 </script>
 
 <style lang="scss" scoped>

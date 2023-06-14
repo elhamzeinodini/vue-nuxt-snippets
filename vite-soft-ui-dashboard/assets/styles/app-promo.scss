@@ -1,0 +1,37 @@
+.promo{
+    background-image: url('/images/ivancik.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    box-shadow: $box-shadow-sm;
+    padding: $rm-1;
+    margin-block: $rm-2;
+    border-radius: $border-radius-md;
+    position: relative;
+    color: $white;
+    z-index: 9999;
+    &::after{
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: $overlay;
+        border-radius: $border-radius-md;
+    }
+    &__title{
+        margin: $rm-1 0 $rm-2 0;
+        font-weight: $font-weight-bolder;
+        font-size: $h5-font-size;
+    }
+    &__subtitle{
+        font-size: $font-size-sm;
+        max-width: 50ch;
+        line-height: $p-line-height;
+        margin-block: $rm-1-5;
+        font-weight: $font-weight-bold;
+    }
+}

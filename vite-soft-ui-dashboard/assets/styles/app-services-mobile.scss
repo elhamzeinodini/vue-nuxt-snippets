@@ -1,0 +1,27 @@
+.services {
+  background-color: $white;
+  box-shadow: $box-shadow-sm;
+  padding: $rm-1;
+  border-radius: $border-radius-md;
+  &__title {
+    font-weight: $font-weight-bold;
+    color: $gray-600;
+  }
+  &__subtitle {
+    color: $gray-900;
+    font-weight: $font-weight-bolder;
+    margin-block: $rm-0-75;
+    font-size: $h5-font-size;
+  }
+  &__description {
+    font-size: $text-sm-font-size;
+    color: $gray-600;
+    margin-bottom: $rm-3;
+    line-height: $p-line-height;
+  }
+  &__img {
+    background-image: $green-gradiant;
+    margin-top: $rm-2;
+    border-radius: $border-radius-md;
+  }
+}
