@@ -11,7 +11,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
-$overlay : rgba(0,0 ,70,0.5) !default;
+$overlay: rgba(0, 0, 70, 0.5) !default;
 
 $blue: #63b3ed !default;
 $indigo: #596cff !default;
@@ -31,7 +31,6 @@ $success: #82d616 !default;
 $warning: #fbcf33 !default;
 $danger: #ea0606 !default;
 $light: $gray-200 !default;
-
 
 // Gradient colors
 $primary-gradient: #7928ca !default;
@@ -65,6 +64,12 @@ $green-gradiant: linear-gradient(
   to left,
   $success-gradient,
   $success-gradient-state
+);
+
+$sales-chart-gradiant: linear-gradient(
+  tp left,
+  $dark-gradient-dark,
+  $dark-gradient-state-dark
 );
 
 // Body
